@@ -1,0 +1,5 @@
+#!/bin/sh
+
+APPDIR=/usr/local/webapps/RamdomChoiceApp
+cd ${APPDIR}
+starman ${APPDIR}/app.psgi -D --p 10081 --workers 10 --pid /tmp/ramdom-choice-app.pid
